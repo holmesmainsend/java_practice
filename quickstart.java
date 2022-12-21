@@ -11,10 +11,12 @@ class quickstart {
         String food = "muffins";
         String flavor = "blueberry";
         int count = 6;
+        double temperature = 76.3;
+        char degreeSign = '\u00B0';
         String farewell = "Goodbye";
 
-        String formattedString = String.format("Today I am eating %s. They are %s flavor. I have %d of them. %s.", 
-        food, flavor, count, farewell);
+        String formattedString = String.format("Today I am eating %s. They are %s flavor. I have %d of them. It is %f%c F today. %s.", 
+        food, flavor, count, temperature, degreeSign, farewell);
 
         System.out.println(formattedString);
     }
