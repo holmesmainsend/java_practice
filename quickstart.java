@@ -19,5 +19,6 @@ class quickstart {
         food, flavor, count, temperature, degreeSign, farewell);
 
         System.out.println(formattedString);
+        System.out.println(formattedString.length());
     }
 }
