@@ -1,8 +1,8 @@
 class quickstart {
     public static void main (String[] args) {
         // ONLY WORKS WITH SINGLE QUOTES
-        char copyrightSymbol = '\u00C6';
-        System.out.println(copyrightSymbol);
+        char latinAE = '\u00C6';
+        System.out.println(latinAE);
 
         double number1 = 7.8;
         int number2 = (int)number1;
