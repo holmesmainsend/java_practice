@@ -15,7 +15,7 @@ class quickstart {
         char degreeSign = '\u00B0';
         String farewell = "Goodbye";
 
-        String formattedString = String.format("Today I am eating %s. They are %s flavor. I have %d of them. It is %f%c F today. %s.", 
+        String formattedString = String.format("Today I am eating %s. They are %s flavor. I have %d of them. It is %.2f%c F today. %s.", 
         food, flavor, count, temperature, degreeSign, farewell);
 
         System.out.println(formattedString);
