@@ -11,7 +11,7 @@ public class userinput {
         System.out.printf("Hello %s. How old are you? \n", name);
         int age = scan.nextInt();
 
-        // cleaning up input buffer to prevent program's premature termination
+        // cleaning up input buffer left over from nextInt, to prevent program ending prematurely
         scan.nextLine();
 
         System.out.printf("%d is a good age. What is your favorite color? ", age);
