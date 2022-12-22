@@ -7,6 +7,7 @@ public class userinput {
         System.out.println("What is your last name?");
         String name = scan.nextLine();
         System.out.println(name);
+        System.out.printf("Hello %s. How are things? \n", name);
 
         scan.close();
     }
