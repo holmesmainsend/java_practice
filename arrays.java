@@ -13,5 +13,8 @@ public class arrays {
         char[] lastLetters = {'z', 'y', 'x'};
         Arrays.sort(lastLetters);
         System.out.println(Arrays.toString(lastLetters));
+
+        int foundItemIndex = Arrays.binarySearch(vowels, 'o');
+        System.out.println(foundItemIndex);
     }
 }
