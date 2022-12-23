@@ -10,7 +10,8 @@ public class arrays {
         vowels[4] = 'u';
         System.out.println(Arrays.toString(vowels));
 
-        char[] lastLetters = {'x', 'y', 'z'};
+        char[] lastLetters = {'z', 'y', 'x'};
+        Arrays.sort(lastLetters);
         System.out.println(Arrays.toString(lastLetters));
     }
 }
