@@ -15,7 +15,15 @@ public class arraylists {
         // numbers.set(2, 9);
         numbers.sort(Comparator.naturalOrder());
 
+        numbers.forEach(number -> {
+            System.out.println(number * number);
+        });
+
         System.out.println(numbers.toString());
         // System.out.println(numbers.get(2));
+        // System.out.println(numbers.size());
+        // System.out.println(numbers.contains(Integer.valueOf(2)));
+        // System.out.println(numbers.contains(Integer.valueOf(50)));
+        // System.out.println(numbers.isEmpty());
     }
 }
