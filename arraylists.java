@@ -14,16 +14,16 @@ public class arraylists {
         // numbers.remove(Integer.valueOf(2));
         // numbers.clear();
         // numbers.set(2, 9);
-        // numbers.sort(Comparator.naturalOrder());
-        // System.out.println(numbers.toString());
+        numbers.sort(Comparator.naturalOrder());
+        System.out.println(numbers.toString());
 
         // numbers.forEach(number -> {
         //     numbers.set(numbers.indexOf(number), number + 10);
         // });
         // System.out.println(numbers.toString());
 
-        for (int number : numbers) {
-            numbers.set(numbers.indexOf(number), number * 2);
+        for (int i = 0; i < numbers.size(); i++) {
+            numbers.set(i, numbers.get(i) * 2);
         }
         System.out.println(numbers.toString());
 
