@@ -1,12 +1,10 @@
-import java.time.LocalDate;
-
 public class oop {
     public static void main (String args[]) {
         User youngerUser = new User();
 
         youngerUser.name = "Bobbyjoe";
-        youngerUser.birthDate = LocalDate.parse("1999-03-13");
+        youngerUser.birthYear = 1999;
 
-        System.out.printf("Hello %s, our records show your birthdate is %s \n", youngerUser.name, youngerUser.birthDate);
+        System.out.printf("Hello %s, our records show that your birth year is %d making your current age approximately %d \n", youngerUser.name, youngerUser.birthYear, youngerUser.currentAge());
     }
 }

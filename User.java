@@ -1,6 +1,8 @@
-import java.time.LocalDate;
-
 public class User {
     public String name;
-    public LocalDate birthDate;
+    public int birthYear;
+
+    public int currentAge() {
+        return 2023 - birthYear;
+    }
 }
