@@ -1,6 +1,6 @@
 public class oop {
     public static void main (String args[]) {
-        User youngerUser = new User("Bobbyjoe", 1999);
+        // User youngerUser = new User("Bobbyjoe", 1999);
         PremiumUser richUser = new PremiumUser("Bezos", 1921, 35.99);
 
         // youngerUser.name = "Bobbyjoe";
