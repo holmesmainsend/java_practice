@@ -17,7 +17,7 @@ public class SevenFourSeven {
                 secondMax = i;
                 switched = true;
                 // Original problem was here, where it was secondMax instead of nums[secondMax]
-            } else if(nums[i] > nums[secondMax] && i != max && switched == true) {
+            } else if(nums[i] > nums[secondMax] && i != max) {
                 secondMax = i;
             }
         }
