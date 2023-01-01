@@ -8,12 +8,23 @@ public class FourNineEight {
         int[] oneD = new int[m * n];
         int z = 0;
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                oneD[z] = twoD[i][j];
-                z++;
-            }
-        }
+        oneD[z] = twoD[0][0];
+        z++;
+        oneD[z] = twoD[0][1];
+        z++;
+        oneD[z] = twoD[1][0];
+        z++;
+        oneD[z] = twoD[2][0];
+        z++;
+        oneD[z] = twoD[1][1];
+        z++;
+        oneD[z] = twoD[0][2];
+        z++;
+        oneD[z] = twoD[1][2];
+        z++;
+        oneD[z] = twoD[2][1];
+        z++;
+        oneD[z] = twoD[2][2];
         
         System.out.println(Arrays.toString(oneD));
     }
