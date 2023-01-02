@@ -57,6 +57,8 @@ public class FourNineEight {
         int[] oneD = new int[totalItems];
         int currentI = 0;
         int currentJ = 0;
+        int verticalDirection = 0;
+        int horizontalDirection = 0;
         int z = 0;
 
 
@@ -187,8 +189,28 @@ public class FourNineEight {
         // Output: [1, 2, 4, 7, 5, 3, 6, 8, 9]
 
 
-        while(totalItems > totalItems - 1) {
+        oneD[z] = twoD[currentI][currentJ];
+        System.out.println(twoD[currentI][currentJ]);
+        z++;
+        while(totalItems > 1) {
+            if(currentI == 0 && currentJ % 2 == 0 && currentJ != n - 1) {
+                currentJ++;
+                verticalDirection = 1;
+                horizontalDirection = -1;
+            } else if(currentJ == 0 && currentI % 2 == 1 && currentI != m - 1) {
+                // 
+            } else if(currentI == m - 1) {
+                currentJ++;
+                verticalDirection = -1;
+                horizontalDirection = 1;
+            } else {
+                currentI += verticalDirection;
+                currentJ += horizontalDirection;
+            }
+            
+            System.out.println(twoD[currentI][currentJ]);
             oneD[z] = twoD[currentI][currentJ];
+            z++;
             totalItems--;
         }
 
