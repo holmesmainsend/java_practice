@@ -36,8 +36,8 @@ public class FourNineEight {
         // int n = 3;
         
         // Case 9
-        // int[][] twoD = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        // int n = 3;
+        int[][] twoD = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int n = 3;
 
         // Case 10
         // int[][] twoD = {{1, 2, 3, 4}};
@@ -48,12 +48,15 @@ public class FourNineEight {
         // int n = 4;
 
         // Case 12
-        int[][] twoD = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-        int n = 4;
+        // int[][] twoD = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+        // int n = 4;
 
 
         int m = twoD.length;
-        int[] oneD = new int[m * n];
+        int totalItems = m * n;
+        int[] oneD = new int[totalItems];
+        int currentI = 0;
+        int currentJ = 0;
         int z = 0;
 
 
@@ -183,6 +186,21 @@ public class FourNineEight {
         */
         // Output: [1, 2, 4, 7, 5, 3, 6, 8, 9]
 
+
+        while(totalItems > totalItems - 1) {
+            oneD[z] = twoD[currentI][currentJ];
+            totalItems--;
+        }
+
+
+
+
+
+
+
+
+
+
         // Case 10
         // oneD[z] = twoD[0][0];
         // z++;
@@ -219,29 +237,29 @@ public class FourNineEight {
         // Output: [1, 2, 5, 6, 3, 4, 7, 8]
 
         // Case 12
-        oneD[z] = twoD[0][0];
-        z++;
-        oneD[z] = twoD[0][1];
-        z++;
-        oneD[z] = twoD[1][0];
-        z++;
-        oneD[z] = twoD[2][0];
-        z++;
-        oneD[z] = twoD[1][1];
-        z++;
-        oneD[z] = twoD[0][2];
-        z++;
-        oneD[z] = twoD[0][3];
-        z++;
-        oneD[z] = twoD[1][2];
-        z++;
-        oneD[z] = twoD[2][1];
-        z++;
-        oneD[z] = twoD[2][2];
-        z++;
-        oneD[z] = twoD[1][3];
-        z++;
-        oneD[z] = twoD[2][3];
+        // oneD[z] = twoD[0][0];
+        // z++;
+        // oneD[z] = twoD[0][1];
+        // z++;
+        // oneD[z] = twoD[1][0];
+        // z++;
+        // oneD[z] = twoD[2][0];
+        // z++;
+        // oneD[z] = twoD[1][1];
+        // z++;
+        // oneD[z] = twoD[0][2];
+        // z++;
+        // oneD[z] = twoD[0][3];
+        // z++;
+        // oneD[z] = twoD[1][2];
+        // z++;
+        // oneD[z] = twoD[2][1];
+        // z++;
+        // oneD[z] = twoD[2][2];
+        // z++;
+        // oneD[z] = twoD[1][3];
+        // z++;
+        // oneD[z] = twoD[2][3];
         /*
         *  |1|2 |3 |4 |
         *  |5|6 |7 |8 |
