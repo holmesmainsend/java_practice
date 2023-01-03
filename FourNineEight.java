@@ -52,14 +52,14 @@ public class FourNineEight {
         // int n = 4;
 
 
-        int m = twoD.length;
-        int totalItems = m * n;
-        int[] oneD = new int[totalItems];
-        int currentI = 0;
-        int currentJ = 0;
-        int verticalDirection = 0;
-        int horizontalDirection = 0;
-        int z = 0;
+        // int m = twoD.length;
+        // int totalItems = m * n;
+        // int[] oneD = new int[totalItems];
+        // int currentI = 0;
+        // int currentJ = 0;
+        // int verticalDirection = 0;
+        // int horizontalDirection = 0;
+        // int z = 0;
 
 
         // Case 1
@@ -189,29 +189,49 @@ public class FourNineEight {
         // Output: [1, 2, 4, 7, 5, 3, 6, 8, 9]
 
 
-        oneD[z] = twoD[currentI][currentJ];
-        System.out.println(twoD[currentI][currentJ]);
-        z++;
-        while(totalItems > 1) {
-            if(currentI == 0 && currentJ % 2 == 0 && currentJ != n - 1) {
-                currentJ++;
-                verticalDirection = 1;
-                horizontalDirection = -1;
-            } else if(currentJ == 0 && currentI % 2 == 1 && currentI != m - 1) {
-                // 
-            } else if(currentI == m - 1) {
-                currentJ++;
-                verticalDirection = -1;
-                horizontalDirection = 1;
-            } else {
-                currentI += verticalDirection;
-                currentJ += horizontalDirection;
-            }
+        // oneD[z] = twoD[currentI][currentJ];
+        // System.out.println(twoD[currentI][currentJ]);
+        // z++;
+        // while(totalItems > 1) {
+        //     if(currentI == 0 && currentJ % 2 == 0 && currentJ != n - 1) {
+        //         currentJ++;
+        //         verticalDirection = 1;
+        //         horizontalDirection = -1;
+        //     } else if(currentJ == 0 && currentI % 2 == 1 && currentI != m - 1) {
+        //         // 
+        //     } else if(currentI == m - 1) {
+        //         currentJ++;
+        //         verticalDirection = -1;
+        //         horizontalDirection = 1;
+        //     } else {
+        //         currentI += verticalDirection;
+        //         currentJ += horizontalDirection;
+        //     }
             
-            System.out.println(twoD[currentI][currentJ]);
-            oneD[z] = twoD[currentI][currentJ];
-            z++;
-            totalItems--;
+        //     System.out.println(twoD[currentI][currentJ]);
+        //     oneD[z] = twoD[currentI][currentJ];
+        //     z++;
+        //     totalItems--;
+
+        // Answer found on LeetCode, for comparison:
+        // public int[] findDiagonalOrder(int[][] matrix) {
+        //     if (matrix.length == 0) return new int[0];
+        //     int r = 0, c = 0, m = matrix.length, n = matrix[0].length, arr[] = new int[m * n];
+        //     for (int i = 0; i < arr.length; i++) {
+        //         arr[i] = matrix[r][c];
+        //         if ((r + c) % 2 == 0) { // moving up
+        //             if      (c == n - 1) { r++; }
+        //             else if (r == 0)     { c++; }
+        //             else            { r--; c++; }
+        //         } else {                // moving down
+        //             if      (r == m - 1) { c++; }
+        //             else if (c == 0)     { r++; }
+        //             else            { r++; c--; }
+        //         }   
+        //     }   
+        //     return arr;
+        }
+
         }
 
 
