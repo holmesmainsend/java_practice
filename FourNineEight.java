@@ -36,8 +36,8 @@ public class FourNineEight {
         // int n = 3;
         
         // Case 9
-        int[][] twoD = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        int n = 3;
+        // int[][] twoD = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        // int n = 3;
 
         // Case 10
         // int[][] twoD = {{1, 2, 3, 4}};
@@ -212,27 +212,7 @@ public class FourNineEight {
         //     oneD[z] = twoD[currentI][currentJ];
         //     z++;
         //     totalItems--;
-
-        // Answer found on LeetCode, for comparison:
-        // public int[] findDiagonalOrder(int[][] matrix) {
-        //     if (matrix.length == 0) return new int[0];
-        //     int r = 0, c = 0, m = matrix.length, n = matrix[0].length, arr[] = new int[m * n];
-        //     for (int i = 0; i < arr.length; i++) {
-        //         arr[i] = matrix[r][c];
-        //         if ((r + c) % 2 == 0) { // moving up
-        //             if      (c == n - 1) { r++; }
-        //             else if (r == 0)     { c++; }
-        //             else            { r--; c++; }
-        //         } else {                // moving down
-        //             if      (r == m - 1) { c++; }
-        //             else if (c == 0)     { r++; }
-        //             else            { r++; c--; }
-        //         }   
-        //     }   
-        //     return arr;
-        }
-
-        }
+        // }
 
 
 
@@ -310,6 +290,29 @@ public class FourNineEight {
         // Output: [1, 2, 5, 9, 6, 3, 4, 7, 10, 11, 8, 12]
 
 
-        System.out.println(Arrays.toString(oneD));
+        // System.out.println(Arrays.toString(oneD));
+
+
+
+
+        
+        // Answer found on LeetCode, for comparison:
+        // public int[] findDiagonalOrder(int[][] matrix) {
+        //     if (matrix.length == 0) return new int[0];
+        //     int r = 0, c = 0, m = matrix.length, n = matrix[0].length, arr[] = new int[m * n];
+        //     for (int i = 0; i < arr.length; i++) {
+        //         arr[i] = matrix[r][c];
+        //         if ((r + c) % 2 == 0) { // moving up
+        //             if      (c == n - 1) { r++; }
+        //             else if (r == 0)     { c++; }
+        //             else            { r--; c++; }
+        //         } else {                // moving down
+        //             if      (r == m - 1) { c++; }
+        //             else if (c == 0)     { r++; }
+        //             else            { r++; c--; }
+        //         }   
+        //     }   
+        //     return arr;
+        // }
     }
 }
