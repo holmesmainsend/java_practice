@@ -18,26 +18,35 @@ public class FiveFour {
         for(int i = 0; i < totalItems; i++) {
             System.out.println(matrix[row][column]);
             answer.add(matrix[row][column]);
-            if(row == previousTopRow + 1 && column != previousFinalColumn - 1) {
-                column++;
-            } else if(row == previousTopRow + 1 && column == previousFinalColumn - 1) {
-                previousTopRow = row;
-                row++;
-            } else if(column == previousFinalColumn - 1 && row != previousBottomRow - 1) {
-                row++;
-            } else if(column == previousFinalColumn - 1 && row == previousBottomRow - 1) {
-                previousFinalColumn = column;
-                column--;
-            } else if(row == previousBottomRow - 1 && column != previousInitialColumn + 1) {
-                column--;
-            } else if(row == previousBottomRow - 1 && column == previousInitialColumn + 1) {
-                previousBottomRow = row;
-                row--;
-            } else if(column == previousInitialColumn + 1 && row != previousTopRow + 1) {
-                row--;
-            } else if(column == previousInitialColumn + 1 && row == previousTopRow + 1) {
-                previousInitialColumn = column;
-                column++;
+
+            if(row == previousTopRow + 1) {
+                if(column != previousFinalColumn - 1) {
+                    column++;
+                } else {
+                    previousTopRow = row;
+                    row++;
+                }
+            } else if(column == previousFinalColumn - 1) {
+                if(row != previousBottomRow - 1) {
+                    row++;
+                } else {
+                    previousFinalColumn = column;
+                    column--;
+                }
+            } else if(row == previousBottomRow - 1) {
+                if(column != previousInitialColumn - 1) {
+                    column--;
+                } else {
+                    previousBottomRow = row;
+                    row--;
+                }
+            } else if(column == previousInitialColumn + 1) {
+                if(row != previousTopRow + 1) {
+                    row--;
+                } else {
+                    previousInitialColumn = column;
+                    column++;
+                }
             }
         }
     }
