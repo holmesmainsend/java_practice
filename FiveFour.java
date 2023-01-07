@@ -1,5 +1,6 @@
 import java.util.*;
 
+// Note to self: see LeetCode for working solution from other contributors
 public class FiveFour {
     public static void main(String[] args) {
         int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
